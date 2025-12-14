@@ -452,6 +452,10 @@ a {
     flex-basis: 750px;
 }
 
+.app-text .title-h2 {
+    font-size: 48px;
+}
+
 .app-image {
     flex-basis: calc(100% - 750px - 4vw);
     position: relative;
@@ -1040,10 +1044,19 @@ a {
     .free-text {
         padding-right: 0;
     }
+
+    .btn-up {
+        width: 27px;
+        height: 46px;
+    }
 }
 
 /* 1000 */
 @media (max-width: 1000px) {
+    .container {
+        max-width: 1000px;
+    }
+
     .btn-burger {
         display: block;
     }
@@ -1161,8 +1174,31 @@ a {
     }
 }
 
+/* 874 */
+@media (max-width: 874px) {
+    .support {
+        display: flex;
+        align-items: start;
+    }
+
+    .support .title-h5 {
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    .support-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+}
+
 /* 650 */
 @media (max-width: 650px) {
+    .container {
+        max-width: 650px;
+    }
+
     .title-h1 {
         font-size: clamp(33px, 9vw, 75px);
     }
@@ -1189,6 +1225,7 @@ a {
 
     .brands {
         gap: 24px 3vw;
+        margin-top: 80px;
     }
     
     .brands img {
@@ -1199,7 +1236,36 @@ a {
     .app-list {
         max-width: 340px;
         gap: 10px;
-        grid-template-columns: 174px 1fr;
+        grid-template-columns: 173px 1fr;
+    }
+
+    .app-text {
+        flex-basis: 515px;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .advantages-text .title-h2 {
+        text-align: center;
+    }
+
+    .advantages-text .description {
+        text-align: center;
+        max-width: 488px;
+    }
+
+    .advantages-item {
+        max-width: 447px;
+        margin: 0 auto;
+        gap: 30px;
+    }
+
+    .advantages-list-text {
+        max-width: 432px;
+    }
+
+    .advantages-list-text .description {
+        text-align: left;
     }
     
     .steps {
@@ -1223,18 +1289,78 @@ a {
         width: 95%;
         bottom: 20px;
     }
+}
 
-    .support {
-        flex-direction: column;
+/* 566 */
+@media (max-width: 566px) {
+        .support {
+        display: flex;
         align-items: center;
+        flex-direction: column;
     }
 
     .support .title-h5 {
-        flex-basis: auto;
+        flex-basis: 0;
+        font-size: 14px;
     }
 
     .support-list {
-        grid-template-columns: 1fr;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .support-item {
+        width: 258px;
     }
 }
+
+/* 360 */
+@media (max-width: 360px) {
+    .container {
+        max-width: 360px;
+    }
+
+    .logo {
+        width: 70px;
+        height: 20px;
+    }
+
+    .header {
+        max-width: calc(360px - 30px);
+        padding: 17px 15px;
+    }
+
+    .btn-accent .span {
+        font-size: 14px;
+    }
+
+    .brands {
+        margin-top: 50px;
+    }
+
+    .section-hero {
+        margin-bottom: 80px;
+    }
+
+    .section-advantages {
+        padding-bottom: 90px;
+    }
+
+    .app-text .title-h2 {
+        font-size: 26px;
+    }
+
+   .app-list {
+        gap: 10px;
+        grid-template-columns: 172px 1fr;
+    }
+
+    .app-list .app-item {
+        font-size: 13px;
+    }
+
+    .footer-top .logo {
+        width: 158px;
+        height: 40px;
+    }
+} 
