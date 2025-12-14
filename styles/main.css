@@ -867,6 +867,13 @@ a {
 .modal .nav {
     display: flex;
     flex-direction: column;
+    color: var(--col-white);
+    padding: 43px 0;
+    gap: 20px;
+}
+
+.modal .nav-link:hover {
+    color: var(--col-accent);
 }
 
 .btn-close {
@@ -880,6 +887,9 @@ a {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
 }
 
 .btn-up {
